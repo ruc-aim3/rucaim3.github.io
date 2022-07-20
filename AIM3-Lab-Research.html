@@ -114,8 +114,49 @@
             <h2  class="g-mb-30"> Vision & Language </h2>
             <!-- paper -->
             <div style="width: 85%" class="g-pl-20 g-pt-10 g-pb-20 g-font-size-22">
-                Advancements in deep learning plus large-scale datasets  have led to great progress in CV & NLP. Building upon these advances, there has emerged great interest in solving challenges that combine linguistic and visual information, such as: Image/Video Captioning, Cross-modal Retrieval, Multimodal Translation, Visual Relation Understanding, VQA, etc.
+                Visual recognition and language understanding are two challenging tasks in artificial intelligence. It is interesting to build machine learning and deep learning models that can reason about images and text.<br><br>
+                <b>Including:</b> Image/video captioning, multimodal translation, VQA, etc.
             </div> 
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/token_lyq.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                TS2-Net: Token Shift and Selection Transformer for Text-Video Retrieval
+                </h2>
+                <h6>Yuqi Liu, Pengfei Xiong, Luhui Xu, Shengming Cao, Qin Jin</h6>
+                <h6>ECCV, 2022.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#token_lyq">abstract</a>&nbsp&nbsp&nbsp<a style="color:#a61d37" href="https://github.com/yuqi657/ts2_net" target="https://github.com/yuqi657/ts2_net">code</a></h6>
+
+                <div id="token_lyq" class="collapse in">
+                  Text-Video retrieval is a task of great practical value and has received increasing attention, among which learning spatial-temporal video representation is one of the research hotspots. The video encoders in the state-of-the-art video retrieval models usually directly adopt the pre-trained vision backbones with the network structure fixed, they therefore can not be further improved to produce the fine-grained spatial-temporal video representation. In this paper, we propose Token Shift and Selection Network (TS2-Net), a novel token shift and selection transformer architecture, which dynamically adjusts the token sequence and selects informative tokens in both temporal and spatial dimensions from input video samples. The token shift module temporally shifts the whole token features back-and-forth across adjacent frames, to preserve the complete token representation and capture subtle movements. Then the token selection module selects tokens that contribute most to local spatial semantics. Based on thorough experiments, the proposed TS2-Net achieves state-of-the-art performance on major text-video retrieval benchmarks, including new records on MSRVTT, VATEX, LSMDC, ActivityNet, and DiDeMo.
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/unifying_zq.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                Unifying Event Detection and Captioning as Sequence Generation via Pre-Training
+                </h2>
+                <h6>Qi Zhang, Yuqing Song, Qin Jin</h6>
+                <h6>ECCV, 2022.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#unifying_zq">abstract</a>&nbsp&nbsp&nbsp<a style="color:#a61d37" href="https://github.com/QiQAng/UEDVC" target="https://github.com/QiQAng/UEDVC">code</a></h6>
+
+                <div id="unifying_zq" class="collapse in">
+                  Dense video captioning aims to generate corresponding text descriptions for a series of events in the untrimmed video, which can be divided into two sub-tasks, event detection and event captioning. Unlike previous works that tackle the two sub-tasks separately, recent works have focused on enhancing the inter-task association between the two sub-tasks. However, designing inter-task interactions for event detection and captioning is not trivial due to the large differences in their task specific solutions. Besides, previous event detection methods normally ignore temporal dependencies between events, leading to event redundancy or inconsistency problems. To tackle above the two defects, in this paper, we define event detection as a sequence generation task and propose a unified pre-training and fine-tuning framework to naturally enhance the inter-task association between event detection and captioning. Since the model predicts each event with previous events as context, the inter-dependency between events is fully exploited and thus our model can detect more diverse and consistent events in the video. Experiments on the ActivityNet dataset show that our model outperforms the state-of-the-art methods, and can be further boosted when pre-trained on extra large-scale video-text data
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
 
 
             <article class="g-pt-40 row">
@@ -298,7 +339,6 @@ boundary annotations. Code will be released at https:
                   Say as You Wish: Fine-grained Control of Image Caption Generation with Abstract Scene Graphs
                 </h2>
                 <h6>Shizhe Chen, Qin Jin, Peng Wang, Qi Wu</h6>
-				<h6>CVPR, 2020.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
                   data-target="#say_csz">abstract</a>&nbsp&nbsp&nbsp<a style="color:#a61d37" href="https://github.com/cshizhe/asg2cap" target="https://github.com/cshizhe/asg2cap">code</a></h6>
 
@@ -328,7 +368,6 @@ boundary annotations. Code will be released at https:
                   Fine-grained Video-Text Retrieval with Hierarchical Graph Reasoning
                 </h2>
                 <h6>Shizhe Chen, Yida Zhao, Qin Jin, Qi Wu</h6>
-				<h6>CVPR, 2020.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
                   data-target="#Fine_csz">abstract</a>&nbsp&nbsp&nbsp<a style="color:#a61d37" href="https://github.com/cshizhe/hgr_v2t" target="https://github.com/cshizhe/hgr_v2t">code</a></h6>
 
@@ -385,6 +424,34 @@ some features of danmaku.
             <!-- End paper -->
 
 
+          </div>
+
+                    <div class="g-pl-20--lg" >
+            <h2 id="VR" class="g-mb-30"> Visual Relation </h2>
+            <div style="width: 85%" class="g-pl-20 g-pt-10 g-pb-20 g-font-size-22">
+                Visual relationship detection is an intermediate image/video understanding task that detects two objects and classifies a predicate that explains the relationship between them.<br><br>
+            </div> 
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/few_zsp.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                Few-shot Action Recognition with Hierarchical Matching and Contrastive Learning
+                </h2>
+                <h6>Sipeng Zheng, Shizhe Chen, Qin Jin</h6>
+                <h6>ECCV, 2022.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#few_zsp">abstract</a></h6>
+
+                <div id="few_zsp" class="collapse in">
+                  该工作旨在解决少样本动作识别任务。少样本动作识别一般遵循metric-learning的方式，通过比较不同视频在度量空间的相似度，基于最近邻的原则实现视频分类。我们注意到，之前的工作往往在度量两个视频是只考虑全局的匹配或者单一的时序的匹配。本文认为，从全局，时序，空间同时进行多层级的匹配是更有效的做法，基于此我们提出了一个多层级的度量匹配方法从多个层面比较两个视频之间的相似度。同时，度量空间是比较视频的基础，它应该有能力对于不同层级的一些细粒度视频差别进行鉴别。但是我们的数据集实际上只有类别的标签而没有耕细粒度的标签，为了规避这一缺陷，并得到一个更好地度量空间用以多层级匹配，我们相应地提出了一个多层级的对比学习算法训练度量空间。我们的方法在几个主要的数据集上都达到了SoTA的结果。
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
             <article class="g-pt-40 row">
               <div class="col-md-3 col-lg-3">
                 <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/vrd_zsp.png" alt="Image Description">
@@ -396,10 +463,21 @@ some features of danmaku.
                 <h6> Sipeng Zheng, Shizhe Chen, Qin Jin</h6>
                 <h6> CVPR, 2022.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
-                  data-target="#vrd_zsp">abstract</a></h6>
-
+                  data-target="#vrd_zsp">abstract</a>&nbsp&nbsp&nbsp<a style="color:#a61d37" href="https://github.com/zhengsipeng/VRDFormer_VRD" target="https://github.com/zhengsipeng/VRDFormer_VRD">code</a></h6>
+                  
                 <div id="vrd_zsp" class="collapse in">
-
+Visual relation understanding plays an essential role for
+holistic video understanding. Most previous works adopt
+a multi-stage framework for video visual relation detection (VidVRD), which cannot capture long-term spatiotemporal contexts in different stages and also suffers from
+inefficiency. In this paper, we propose a transformerbased framework called VRDFormer to unify these decoupling stages. Our model exploits a query-based approach to autoregressively generate relation instances. We
+specifically design static queries and recurrent queries to
+enable efficient object pair tracking with spatio-temporal
+contexts. The model is jointly trained with object pair
+detection and relation classification. Extensive experiments
+on two benchmark datasets, ImageNet-VidVRD and VidOR,
+demonstrate the effectiveness of the proposed VRDFormer,
+which achieves the state-of-the-art performance on both
+relation detection and relation tagging tasks. 
                 </div>
             </article>
             <hr>
@@ -445,7 +523,6 @@ some features of danmaku.
                   Visual Relation Detection with Multi-Level Attention
                 </h2>
                 <h6>Sipeng Zheng, Shizhe Chen, Qin Jin</h6>
-				<h6>ACM Multimedia, 2019.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
                   data-target="#vr_zsp">abstract</a></h6>
 
@@ -473,9 +550,6 @@ some features of danmaku.
 
           <div class="g-pl-20--lg" >
             <h2 id="ac" class="g-mb-30"> Affective Computing </h2>
-			<div style="width: 85%" class="g-pl-20 g-pt-10 g-pb-20 g-font-size-22">
-                Affective Computing aims to develop new technologies and theories that advance basic understanding of affect and its role in human experience. We focus on building systems that can percept and undertand human emotions through multiple modalities. <br><br>
-            </div> 
 
             <article class="g-pt-40 row">
               <div class="col-md-3 col-lg-3">
@@ -606,7 +680,6 @@ the multimodal conversation setting.
                   Speech Emotion Recognition in Dyadic Dialogues with Attentive Interaction Modeling.
                 </h2>
                 <h6>Jinming Zhao, Shizhe Chen, Jingjun Liang, Qin Jin</h6>
-				<h6>INTERSPEECH, 2019.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
                   data-target="#is_zjm">abstract</a></h6>
 
@@ -630,10 +703,7 @@ the multimodal conversation setting.
           </div>
 
           <div class="g-pl-20--lg" >
-            <h2 id="other" class="g-mb-30"> Music Intelligent Computing </h2>
-			<div style="width: 85%" class="g-pl-20 g-pt-10 g-pb-20 g-font-size-22">
-                Music Intelligent Computing aims to automatically undertand and generate music by artificial intelligent systems. We focus on building automatic melody and lyric generation systems and automatic singing synthesis systems. <br><br>
-            </div> 
+            <h2 id="other" class="g-mb-30"> Music Computing </h2>
 
             <article class="g-pt-40 row">
               <div class="col-md-3 col-lg-3">
@@ -674,7 +744,7 @@ objective and subjective evaluations.
                   Sequence-To-Sequence Singing Voice Synthesis With Perceptual Entropy Loss
                 </h2>
                 <h6> Jiatong Shi, Shuai Guo, Nan Huo, Yuekai Zhang, Qin Jin</h6>
-                <h6> ICASSP, 2021.</h6>
+                <h6> ICASSP,   2021.</h6>
                 <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
                   data-target="#seq_sjt">abstract</a></h6>
 
@@ -708,6 +778,10 @@ objective and subjective evaluations.
                 <li>
                   <a class=" js-go-to d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8 g-font-size-13" href="#!"  data-target="#vl"  >
                     <i class="mr-2 fa fa-angle-right"></i> Vision & Language</a>
+                </li>
+                <li>
+                  <a class="js-go-to  d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8 g-font-size-13" href="#!" data-target="#VR">
+                    <i class="mr-2 fa fa-angle-right"></i> Visual Relation</a>
                 </li>
                 <li>
                   <a class="js-go-to  d-block u-link-v5 g-color-gray-dark-v4 rounded g-px-20 g-py-8 g-font-size-13" href="#!"  data-target="#ac">

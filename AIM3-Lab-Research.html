@@ -120,6 +120,136 @@
 
             <article class="g-pt-40 row">
               <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/cap_yll.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                CapEnrich: Enriching Caption Semantics for Web Images via Cross-modal Pre-trained Knowledge
+                </h2>
+                <h6> Linli Yao, Weijing Chen, Qin Jin</h6>
+                <h6> WWW, 2023.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#cap_yll">abstract</a></h6>
+
+                <div id="cap_yll" class="collapse in">
+                  Automatically generating textual descriptions for massive unlabeled
+images on the web can greatly benefit realistic web applications,
+e.g. multimodal retrieval and recommendation. However, existing
+models suffer from the problem of generating “over-generic” descriptions, such as their tendency to generate repetitive sentences
+with common concepts for different images. These generic descriptions fail to provide sufficient textual semantics for ever-changing
+web images. Inspired by the recent success of Vision-Language
+Pre-training (VLP) models that learn diverse image-text concept
+alignment during pretraining, we explore leveraging their crossmodal pre-trained knowledge to automatically enrich the textual
+semantics of image descriptions. With no need for additional human
+annotations, we propose a plug-and-play framework, i.e CapEnrich,
+to complement the generic image descriptions with more semantic
+details. Specifically, we first propose an automatic data-building
+strategy to get desired training sentences, based on which we then
+adopt prompting strategies, i.e. learnable and template prompts,
+to incentivize VLP models to generate more textual details. For
+learnable templates, we fix the whole VLP model and only tune the
+prompt vectors, which leads to two advantages: 1) the pre-training
+knowledge of VLP models can be reserved as much as possible to describe diverse visual concepts; 2) only lightweight trainable parameters are required, so it is friendly to low data resources. Extensive
+experiments show that our method significantly improves the descriptiveness and diversity of generated sentences for web images.
+The code is available
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/MPMQA_zl.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                MPMQA: Multimodal Question Answering on Product Manuals
+                </h2>
+                <h6> Liang Zhang, Anwen Hu, Jing Zhang, Shuo Hu, Qin Jin</h6>
+                <h6> AAAI, 2023.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#MPMQA_zl">abstract</a></h6>
+
+                <div id="MPMQA_zl" class="collapse in">
+                  自动为互联网上的大量无标签图像生成文本描述，可以有效辅助多模态检索、推荐等实际应用。然而，现有模型普遍存在生成文本过于“笼统（over-generic）”的问题，即它们倾向于为不同的图像生成雷同甚至重复的简单句子。最先进的基于视觉-语言预训练的模型也无法避免该问题，例如上图中，VLP模型为6张图片生成相同的句子“a man riding a wave on a surfboard in the ocean”。考虑到互联网上图像的多样性，这些笼统的文本不能提供充分的语义信息。本文的目标是自动为图像生成包含更多视觉细节的文本。基于先进的跨模态预训练（VLP）模型，我们提出了一个即插即用的框架CapEnrich，来利用VLP模型在预训练阶段学习到的丰富的视觉-文本概念对齐知识，自动为笼统的文本补充更多细节，无需人工标注富含细节的文本。具体地，我们首先提出了一个自动数据构造策略，来获得“先整体概括，再细节补充”的新格式文本，用于后续训练。然后我们结合提示学习（prompt learning），设计了手工提示模板和可学提示向量，来激励预训练模型生成更加细节的描述内容。在提示向量训练过程中，我们固定预训练模型参数、只更新提示向量，来保证两个优势：1）尽可能保留预训练模型的原有参数空间和预训练知识；2）轻量的参数学习，对低数据量的训练场景友好。在不同的预训练模型和数据集上的实验，证明了我们方法的通用性和有效性。
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/clip_rld.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                Accommodating Audio Modality in CLIP for Multimodal Processing
+                </h2>
+                <h6> Ludan Ruan, Anwen Hu, Yuqing Song, Liang Zhang, Sipeng Zheng, Qin Jin</h6>
+                <h6> AAAI, 2023.</h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#clip_rld">abstract</a></h6>
+
+                <div id="clip_rld" class="collapse in">
+                  Multimodal processing has attracted much attention lately especially
+with the success of pre-training. However, the exploration
+has mainly focused on vision-language pre-training, as
+introducing more modalities can greatly complicate model
+design and optimization. In this paper, we extend the stateof-
+the-art Vision-Language model CLIP to accommodate the
+audio modality for Vision-Language-Audio multimodal processing.
+Specifically, we apply inter-modal and intra-modal
+contrastive learning to explore the correlation between audio
+and other modalities in addition to the inner characteristics
+of the audio modality. Moreover, we further design an
+audio type token to dynamically learn different audio information
+type for different scenarios, as both verbal and nonverbal
+heterogeneous information is conveyed in general audios.
+Our proposed CLIP4VLA model is validated in different
+downstream tasks including video retrieval and video
+captioning, and achieves the state-of-the-art performance on
+the benchmark datasets of MSR-VTT, VATEX, and Audiocaps.
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
+                <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/mix_lyq.png" alt="Image Description">
+              </div> 
+              <div class="col-md-7 col-lg-7">
+                <h2 class="h4 g-color-black g-font-weight-600 mb-3">
+                Token Mixing: Parameter-Efficient Transfer Learning from Image-Language to Video-Language
+                </h2>
+                <h6>Yuqi Liu, Luhui Xu, Pengfei Xiong, Qin Jin </h6>
+                <h6>AAAI, 2023. </h6>
+                <h6><a class="g-color-primary g-color-primary--hover g-color-gray-dark-v5--active" data-toggle="collapse" 
+                  data-target="#mix_lyq">abstract</a></h6>
+
+                <div id="mix_lyq" class="collapse in">
+                  Applying large scale pre-trained image-language model to
+video-language tasks faces two challenges. One is how to effectively transfer knowledge from static images to dynamic
+videos, and the other is how to cope with the prohibitive cost
+of fully fine-tuning due to the growing size of the model. Existing works that attempt to realize parameter-efficient imagelanguage to video-language transfer learning can be categorized into two types: 1) appending a sequence of temporal transformer blocks after the 2D Vision Transformer
+(ViT), and 2) inserting a temporal block into the ViT architecture. While these two types of methods only require
+fine-tuning the newly added components, there are still many
+parameters to update, and they are only validated on a single video-language task. In this work, based on our analysis of the core ideas of different temporal modeling components in existing approaches, we propose a token mixing strategy to allow cross-frame interactions, which enables
+transferring from the pre-trained image-language model to
+video-language tasks through selecting and mixing a key
+set and a value set from the input video samples. As token mixing does not require the addition of any components or modules, we can partially fine-tune the pre-trained
+image-language model to achieve parameter-efficiency. We
+carry out extensive experiments to compare our proposed
+token mixing method with other parameter-efficient transfer learning methods. Our token mixing method outperforms other methods on both understanding tasks and generation tasks. Besides, our method achieves new records
+on multiple video-language tasks.
+                </div>
+            </article>
+            <hr>
+            <!-- End paper -->
+
+            <article class="g-pt-40 row">
+              <div class="col-md-3 col-lg-3">
                 <img class="d-flex g-width-300  g-height-200 0  mr-2 g-ml-minus-0" src="./images/paper/lingual_zhang.png" alt="Image Description">
               </div> 
               <div class="col-md-7 col-lg-7">

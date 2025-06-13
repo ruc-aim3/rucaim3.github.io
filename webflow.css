@@ -8982,7 +8982,7 @@ figcaption {
 /* Styles for separator text like "|" */
 .join-us-content .join-us-separator {
   color: #777777;
-  font-style: italic;
+  /* font-style: italic; */
   text-decoration: none;
   margin: 0 0.1em;
   font-family: var(--font--serif); /* Apply Lora font */

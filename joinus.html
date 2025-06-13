@@ -47,6 +47,23 @@
       .leaflet-control-attribution a[href*="leaflet ukrainian support"]:before {
         content: "";
       }
+      .language-switcher {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 20px;
+      }
+      .language-switcher .nav-link {
+        padding: 0 5px;
+        font-size: 14px;
+      }
+      .language-separator {
+        color: #666;
+        margin: 0 5px;
+      }
+      .language-switcher .nav-link.active {
+        color: #000;
+        font-weight: 500;
+      }
     </style>
   </head>
   <body>
@@ -74,8 +91,12 @@
                     <a href="research.html" class="nav-link w-nav-link">Research</a>
                     <a href="publication.html" class="nav-link w-nav-link">Publication</a>
                     <a href="people.html" class="nav-link w-nav-link">People</a>
-                    <a href="joinus.html" aria-current="page" class="nav-link w-nav-link w--current">Join Us</a> <!-- Added Join Us and made it current -->
-                    <!-- <a href="contact.html" class="nav-link w-nav-link">Contact</a> -->
+                    <a href="joinus.html" aria-current="page" class="nav-link w-nav-link w--current">Join Us</a>
+                    <div class="language-switcher">
+                        <a href="joinus.html" class="nav-link w-nav-link active">EN</a>
+                        <span class="language-separator">|</span>
+                        <a href="joinus_zh.html" class="nav-link w-nav-link">中文</a>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -102,14 +123,14 @@
                         <p class="join-us-body-text">We have graduate openings for Fall 2026: <strong>2 Ph.D. students, 3 Academic Master's students, and 2~3 Engineering Master's students</strong>.</p>
                         <br>
                         <p class="join-us-body-text">We are looking for passionate and dedicated individuals who are excited to tackle challenging problems and make meaningful contributions to the field. Ideal candidates should demonstrate the following qualities:</p>
-                        <ol class="list-text">
+                        <ul class="list-text">
                             <li><strong>Strong academic background</strong>: From "double first-class initiative (双一流)" universities with a class rank in the top 20%. Prior research experience is a strong plus.</li>
                             <li><strong>Passion and perseverance</strong>: Genuine enthusiasm for research: solving hard problems and making meaningful contributions to the field. Success in research requires diligence, creativity, and a willingness to embrace challenges.</li>
                             <li><strong>Self-motivated learning</strong>: Ability to quickly pick up new research directions, tools, and techniques.</li>
                             <li><strong>Solid programming and English skills</strong>: These are essential for effective research, academic writing, and collaboration.</li>
-                        </ol>
+                        </ul>
                         <br>
-                        <p class="join-us-body-text">If you’re enthusiastic about research and eager to grow in a supportive, innovative, and research-driven environment, we warmly invite you to apply. Please send your <strong>CV</strong> to <a class="join-us-link">aim3.ruc [at] gmail.com</a>.</p>
+                        <p class="join-us-body-text">If you're enthusiastic about research and eager to grow in a supportive, innovative, and research-driven environment, we warmly invite you to apply. Please send your <strong>CV</strong> to <a class="join-us-link">aim3.ruc [at] gmail.com</a>.</p>
                         <br>
                         <p class="join-us-body-text">We look forward to hearing from you!</p>
                         <br>
@@ -122,7 +143,7 @@
 
                     <div class="card-template-details">
                         <h3 class="template-h2">Research Internship Opportunities at AIM3</h3><br>
-                        <p class="join-us-body-text">We are offering research internship positions for <strong>highly motivated undergraduate students</strong> interested in cutting-edge AI research, <strong>preferably sophomore or Junior (Class of 2023 or 2024) students</strong>. Join us to work on exciting topics such as:</p>
+                        <p class="join-us-body-text">We are offering research internship positions for highly motivated undergraduate students interested in cutting-edge AI research, preferably <strong>Sophomore or Junior (Class of 2023 or 2024)</strong> students. Join us to work on exciting topics such as:</p>
                         <ul class="list-text">
                             <li>Large (Multimodal) Language Models</li>
                             <li>Embodied Intelligence</li>
@@ -139,7 +160,7 @@
                         <br>
                         <p class="join-us-body-text">We welcome students who are truly passionate about our research directions. <strong>Ideal candidates should:</strong></p>
                         <ul class="list-text">
-                            <li>Be enthusiastic and committed, able to consistently dedicate time each week</li>
+                            <li>Be enthusiastic and committed, able to consistently dedicate time each week (on-site or remote)</li>
                             <li>Possess solid programming skills and a certain AI-related foundation</li>
                             <li>(Preferred) Demonstrate strong academic performance, prior research experience, or excellence in algorithm competitions</li>
                         </ul>

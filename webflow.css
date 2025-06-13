@@ -3535,7 +3535,8 @@ figcaption {
 }
 
 .section.contect-c-hero {
-  padding-top: 80px;
+  background-color: #f9f9f9f9;
+  padding-top: 0px;
 }
 
 .section.privacy-hero {
@@ -8922,4 +8923,87 @@ figcaption {
 }
 .slide.active {
   opacity: 1;
+}
+
+/* Custom styles for Join Us page content - Added to refactor inline styles */
+
+/* Base font size for this content block to ensure consistent 'em' calculations */
+.join-us-content {
+  font-size: 22px; /* Matches html base font size for original inline 'em' values */
+}
+
+/* Specific styling for the introductory text container */
+.join-us-intro-container {
+  padding-bottom: 20px;
+}
+
+/* Styles for the large introductory paragraph */
+.join-us-content .intro-large-text {
+  font-family: var(--font--serif); /* Apply Lora font */
+  font-size: 1.6em; /* Retains original calculated size (1.6 * 14px = 22.4px) */
+  line-height: 140%;
+}
+
+/* Styles for medium-sized body paragraphs */
+.join-us-content .join-us-body-text {
+  font-family: var(--font--serif); /* Apply Lora font */
+  font-size: 1.1em; /* Retains original calculated size (1.1 * 14px = 15.4px) */
+  line-height: 140%;
+}
+
+/* Styles for ordered and unordered lists */
+.join-us-content .list-text {
+  font-family: var(--font--serif); /* Apply Lora font */
+  font-size: 1.0em; /* Retains original calculated size (1.0 * 14px = 14px) */
+  padding-left: 60px; /* From inline style */
+  margin-top: 5px; /* From inline style */
+  margin-bottom: 10px; /* From inline style */
+}
+
+/* Styles for individual list items */
+.join-us-content .list-text li {
+  margin-bottom: 5px; /* From inline style */
+  line-height: 140%; /* Ensure consistent line height */
+}
+
+/* Styles for blue, underlined links within the content */
+.join-us-content .join-us-link {
+  text-decoration: underline;
+  font-family: var(--font--serif); /* Apply Lora font */
+}
+
+/* Styles for subtle, italic, non-underlined links/separators */
+.join-us-content .join-us-subtle-link {
+  color: #777777;
+  font-style: italic;
+  text-decoration: underline;
+  font-family: var(--font--serif); /* Apply Lora font */
+}
+
+/* Styles for separator text like "|" */
+.join-us-content .join-us-separator {
+  color: #777777;
+  font-style: italic;
+  text-decoration: none;
+  margin: 0 0.1em;
+  font-family: var(--font--serif); /* Apply Lora font */
+}
+
+/* Specific Lora font for text elements in the contact section that previously had inline styles */
+.contact-tile .contact-text-lora {
+  font-family: var(--font--serif); /* Apply Lora font */
+  font-size: 20px; /* Adjusted from 'large' to a specific pixel value for consistency */
+}
+
+/* Hamburger icon color for the joinus page, overriding default white */
+.hamburger-icon.dark-hamburger-icon span {
+  background-color: black;
+}
+
+/* General rule to ensure all common text elements within the main content area use Lora */
+.right-column-template-details p,
+.right-column-template-details ul,
+.right-column-template-details ol,
+.right-column-template-details li {
+  font-family: var(--font--serif); /* Apply Lora font to all these elements */
 }

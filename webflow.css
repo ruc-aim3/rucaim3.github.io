@@ -8940,14 +8940,14 @@ figcaption {
 /* Styles for the large introductory paragraph */
 .join-us-content .intro-large-text {
   font-family: var(--font--serif); /* Apply Lora font */
-  font-size: 1.6em; /* Retains original calculated size (1.6 * 14px = 22.4px) */
+  font-size: 1.0em; /* Retains original calculated size (1.6 * 14px = 22.4px) */
   line-height: 140%;
 }
 
 /* Styles for medium-sized body paragraphs */
 .join-us-content .join-us-body-text {
   font-family: var(--font--serif); /* Apply Lora font */
-  font-size: 1.1em; /* Retains original calculated size (1.1 * 14px = 15.4px) */
+  font-size: 1.0em; /* Retains original calculated size (1.1 * 14px = 15.4px) */
   line-height: 140%;
 }
 
@@ -8975,7 +8975,6 @@ figcaption {
 /* Styles for subtle, italic, non-underlined links/separators */
 .join-us-content .join-us-subtle-link {
   color: #777777;
-  font-style: italic;
   text-decoration: underline;
   font-family: var(--font--serif); /* Apply Lora font */
 }
